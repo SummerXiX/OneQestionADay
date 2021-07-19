@@ -3,6 +3,11 @@
 
 <main>
   <h1>hello, <%= user ? user.profile.name : "friend" %></h1>
+  <h2>About The classic Rider-Waite Tarot Deck</h2>
+  <p> There are so many decks of tarot decks in the market nowadays, and each serves its own purposes. The classis Rider-Waite tarot Deck, in my humble opinion, is the most comprehensive in terms of design, story-telling, and astrological importance. This deck of card was originated in the mid-15th century in Northern Italy as a deck of game cards. Only more recently did it evolve into a tool of fortune telling and divination as most people know it today. There is a standard set of interpretation, but each reader is encouraged to attached his/her own interpretations. In fact, if well-trained, everyone can design a deck of tarot card that can accurately reflect the inccidents in question.</p>
+  <h3>Why does it work?</h3>
+  <p>When the practitioner formulate a question, the card drawn reflects a frequency that aligns with the frequency of practitioner's question. The same principal applies to other fortune telling methods and tools in other culture </p>
+  
   <% if (user?.profile.avatar) { %>
     <div>
       <img 
@@ -12,5 +17,6 @@
     </div>
   <% } %>
 </main>
+
 
 <%- include('./partials/footer') %>
