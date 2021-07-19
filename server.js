@@ -27,6 +27,7 @@ import { router as allCardsRouter } from './routes/cards.router.js'
 import { router as favoriteCardsRouter } from './routes/myFavCards.js'
 import { router as newReadingRouter } from './routes/newReading.js'
 import { router as pastReadingsRouter } from './routes/pastReadings.js'
+import { router as myProfileRouter } from './routes/myProfile.js'
 
 
 // view engine setup
@@ -74,6 +75,7 @@ app.use('/allCards', allCardsRouter)
 app.use('/favoriteCards', favoriteCardsRouter)
 app.use('/newReading', newReadingRouter)
 app.use('/pastReadings', pastReadingsRouter)
+app.use('/myProfile', myProfileRouter)
 
 
 

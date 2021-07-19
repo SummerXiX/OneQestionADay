@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import * as myProfileCtrl from "../controller/myProfile.js"
 
 export {
   router
@@ -6,9 +7,5 @@ export {
 
 const router = Router()
 
-router.get('/profile', function (req, res){
-    console.log('this is profile')
-    res.render('profile')
-  })
-
+router.get('/', myProfileCtrl.index)
   

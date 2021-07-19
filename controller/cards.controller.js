@@ -2,7 +2,7 @@ import {
   Card
 } from '../models/card.model.js'
 // import allCards from '../database/tarot-images.json';
-import { readFile } from 'fs';
+import fs from 'fs';
 
 export {
   index,
@@ -10,7 +10,9 @@ export {
 }
 
 function index(req, res) {
-  console.log("cards");
+  let rawData = fs.readFileSync('./database/tarot_images.json', 'utf-8');
+  let allCards = JSON.parse(rawData);
+  console.log(allCards);
   // readFile('../database/tarot-images.json', (err, data) => {
   //   if (err) throw err;
   //   console.log(data);
@@ -18,9 +20,10 @@ function index(req, res) {
   // });
   res.render("allCards/index", {
     title: "All Cards",
-    // cards: allCards,
+    allCards: allCards,
     })
 }
+
   
 
 
