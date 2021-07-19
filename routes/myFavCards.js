@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import * as myFavCardsCtrl from "../controller/myFavCards.js"
 
 export {
   router
@@ -6,10 +7,9 @@ export {
 
 const router = Router()
 
-router.get('/favoriteCards', function (req, res) {
-    console.log('this is fav cards')
-    res.render('favoriteCards')
-  })
+router.get('/', myFavCardsCtrl.favorites);
 
+
+  
 
 

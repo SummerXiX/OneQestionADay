@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import * as pastReadingsCtrl from "../controller/pastReadings.js"
 
 export {
   router
@@ -6,8 +7,4 @@ export {
 
 const router = Router()
 
-router.get('/pastReadings', function (req, res) {
-    console.log('this is past readings')
-    res.render('pastReadings')
-  })
-  
+router.get('/', pastReadingsCtrl.index)

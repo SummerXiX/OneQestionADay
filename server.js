@@ -7,6 +7,9 @@ import session from 'express-session'
 import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
+import { passUserToView } from './middleware/middleware.js'
+
+
 
 // create the express app
 const app = express()
@@ -20,6 +23,11 @@ import('./config/passport.js')
 // require routes
 import { router as indexRouter } from './routes/index.js'
 import { router as authRouter } from './routes/auth.js'
+import { router as allCardsRouter } from './routes/cards.router.js'
+import { router as favoriteCardsRouter } from './routes/myFavCards.js'
+import { router as newReadingRouter } from './routes/newReading.js'
+import { router as pastReadingsRouter } from './routes/pastReadings.js'
+
 
 // view engine setup
 app.set(
@@ -55,10 +63,19 @@ app.use(
 app.use(passport.initialize())
 app.use(passport.session())
 
+
+// custom middleware
+app.use(passUserToView)
+
 // router middleware
 app.use('/', indexRouter)
 app.use('/auth', authRouter)
 app.use('/allCards', allCardsRouter)
+app.use('/favoriteCards', favoriteCardsRouter)
+app.use('/newReading', newReadingRouter)
+app.use('/pastReadings', pastReadingsRouter)
+
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

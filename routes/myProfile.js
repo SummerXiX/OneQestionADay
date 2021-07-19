@@ -6,7 +6,7 @@ export {
 
 const router = Router()
 
-router.get('/myProfile', function (req, res){
+router.get('/profile', function (req, res){
     console.log('this is profile')
     res.render('profile')
   })
