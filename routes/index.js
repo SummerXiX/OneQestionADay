@@ -31,7 +31,7 @@ router.get('/pastReadings', function (req, res) {
   res.render('pastReadings')
 })
 
-router.get('/profile', function (req, res){
+router.get('/myProfile', function (req, res){
   console.log('this is profile')
   res.render('profile')
 })
