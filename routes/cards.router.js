@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import * as allcardsCtrl from "../controller/cards.controller.js"
+import * as allcardsCtrl from "../controller/cards.js"
 
 export {
   router
