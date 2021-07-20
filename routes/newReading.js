@@ -8,3 +8,4 @@ export {
 const router = Router()
 
 router.get('/', newReadingCtrl.index)
+router.post('/new', newReadingCtrl.show)

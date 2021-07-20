@@ -7,15 +7,19 @@
 // comment -> tickets
 
 const commentSchema = new mongoose.Schema({
-    Interpretation: String,
-    Connotation: Boolean
+    interpretation: String,
+    connotation: Boolean,
 })
 
 
 const readingSchema = new mongoose.Schema({
+    user: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
+    question: String,
     card1: Object,
     card2: Object,
     card3: Object,
-    comment:  ,
-})
+    comment: commentSchema,
+    }
+)
+
 

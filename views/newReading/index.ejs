@@ -9,28 +9,16 @@
         3. Submit by clickling on the Shuffle button
         4. Save your reading
     </p>
-    <!-- {
-      headers: content type json/
-      method: POST
-      url: /api/cards/new
-    }
-      {
-        question: 'string value typed' 
-      } -->
     <% if (user) { %>
       <h2>Enter your question here</h2>
-      <form action="/api/cards/new" method="POST">
+      <form action="/newReading/new" method="POST">
         <label>
           Question:
-          <input type="text" question="question" autocomplete="off">
+          <input type="text" name="question" autocomplete="off">
         </label>
         <button type="submit">Shuffle</button>
       </form>
-      <label>
-        Result:
-        <input type="text" result="result autocomplete="off">
-      </label>
-      <button type="save">Save</button>
+      
     <% } %>
 </section>
 
