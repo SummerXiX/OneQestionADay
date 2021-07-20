@@ -33,13 +33,14 @@ function shuffle(data) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
-    // And swap it with the current element.
+    // And swap it with the current element
     [data[currentIndex], data[randomIndex]] = [
       data[randomIndex], data[currentIndex]];
   }
 
   let firstThreeData = data.slice(0,3)
-  let threeCards= firstThreeData.data.img
+  let threeCards = firstThreeData.data.img
+  let threeNames = firstThreeData.data.name
   console.log(threeCards)
   return threeCards
 }
