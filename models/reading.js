@@ -1,25 +1,39 @@
+import mongoose from "mongoose"
+const Schema = mongoose.Schema
 
-// make a ReadingSchema 
-// make a commentSchema - answer
-//Embed commentschema into the readingSchema
-// look at the flights lab (flight/js)
-// flights- > reading
-// comment -> tickets
+export {
+    Reading,
+    Card,
+}
 
-const commentSchema = new mongoose.Schema({
-    interpretation: String,
-    connotation: Boolean,
-})
+const cardSchema = new mongoose.Schema({
+    name: String,
+    number: String,
+    img: String,
+}, { timestamps: true })
 
 
-const readingSchema = new mongoose.Schema({
-    user: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
+const readingSchema = new mongoose.Schema(
+  {
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "Profile" },
     question: String,
-    card1: Object,
-    card2: Object,
-    card3: Object,
-    comment: commentSchema,
-    }
-)
+    card1: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Card",
+    },
+    card2: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Card",
+    },
+    card3: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Card",
+    },
+    comment: String,
+  },
+  { timestamps: true }
+);
 
+const Reading = mongoose.model('Reading', readingSchema)
+const Card = mongoose.model('Card', cardSchema)
 

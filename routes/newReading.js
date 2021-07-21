@@ -1,11 +1,12 @@
-import { Router } from 'express'
-import * as newReadingCtrl from "../controller/newReading.js"
+import { Router } from "express";
+import * as newReadingCtrl from "../controller/newReading.js";
+import { isLoggedIn } from "../middleware/middleware.js";
 
-export {
-  router
-}
+export { router };
 
-const router = Router()
+const router = Router();
 
-router.get('/', newReadingCtrl.index)
-router.post('/new', newReadingCtrl.show)
+router.get("/", isLoggedIn, newReadingCtrl.index);
+router.get("/result", isLoggedIn, newReadingCtrl.index);
+router.post("/result", isLoggedIn, newReadingCtrl.showResult);
+router.post("/addComment", isLoggedIn, newReadingCtrl.addComment);

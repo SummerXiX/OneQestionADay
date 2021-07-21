@@ -1,25 +1,22 @@
-<%- include('../partials/html-head') %>
-<%- include('../partials/nav') %>
+<%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
-<section> 
-    <h1>Enter your Question of the Day</h1>
-    <p> Instructions:
-        1. Find a quiet place and think about a yes or no question
-        2. Enter your question
-        3. Submit by clickling on the Shuffle button
-        4. Save your reading
-    </p>
-    <% if (user) { %>
-      <h2>Enter your question here</h2>
-      <form action="/newReading/new" method="POST">
-        <label>
-          Question:
-          <input type="text" name="question" autocomplete="off">
-        </label>
-        <button type="submit">Shuffle</button>
-      </form>
-      
-    <% } %>
+<section>
+  <h1>Enter your Question of the Day</h1>
+  <p>
+    Instructions: 1. Find a quiet place and think about a yes or no question 2.
+    Enter your question 3. Submit by clickling on the Shuffle button 4. Save
+    your reading
+  </p>
+  <% if (user) { %>
+  <h2>Enter your question here</h2>
+  <form action="/newReading/result" method="POST">
+    <label>
+      Question:
+      <input type="text" name="question" autocomplete="off">
+    </label>
+    <button type="submit">Shuffle</button>
+  </form>
+  <% } %>
 </section>
 
 <%- include('../partials/footer') %>

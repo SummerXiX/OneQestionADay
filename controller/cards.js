@@ -5,7 +5,7 @@ const data = JSON.parse(
     new URL('../database/tarot_images.json', import.meta.url)
   )
 )
-console.log(data.cards)
+// console.log(data.cards)
 
 
 export {

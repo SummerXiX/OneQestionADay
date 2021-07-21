@@ -1,37 +1,20 @@
-<%- include('../partials/html-head') %>
+<%- include('../partials/html-head') %> 
 <%- include('../partials/nav') %>
 
-<section> 
-    <!-- <h1>Enter your Question of the Day</h1>
-    <p> Instructions:
-        1. Find a quiet place and think about a yes or no question
-        2. Enter your question
-        3. Submit by clickling on the Shuffle button
-        4. Save your reading
-    </p>
-    <!-- {
-      headers: content type json/
-      method: POST
-      url: /api/cards/new
-    }
-      {
-        question: 'string value typed' 
-      } // -->  -->
-    <% if (user) { %>
-      <h2>My past reading</h2>
-      <!-- <form action="/api/cards/new" method="POST">
-        <label>
-          Question:
-          <input type="text" question="question" autocomplete="off">
-        </label>
-        <button type="submit">Shuffle</button>
-      </form>
-      <label>
-        Result:
-        <input type="text" result="result autocomplete="off">
-      </label>
-      <button type="save">Save</button> -->
-    <% } %>
+<section>
+  <h1>No readings yet!</h1>
+
+  <ul>
+    <% reading.forEach(data => { %>
+    <p><%= data._id %></p>
+    <p><%= data.question %></p>
+    <p><%= data.card1.img %></p>
+    <p><%= data.card2.img %></p>
+    <p><%= data.card3.img %></p>
+    <p><%= data.comment %></p>
+
+    <% }) %>
+  </ul>
 </section>
 
 <%- include('../partials/footer') %>
