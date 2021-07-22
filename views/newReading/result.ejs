@@ -1,40 +1,37 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
 <section>
-  <h1>Enter your Question of the Day</h1>
-  <p>
-    Instructions: 1. Find a quiet place and think about a yes or no question 2.
-    Enter your question 3. Submit by clickling on the Shuffle button 4. Save
-    your reading
-  </p>
+  <h1>Your question was...</h1>
+  <p></p>
 
   <% if (user) { %>
   <h2><%=question %></h2>
   <br />
-
-  <img src="/images/cards/<%= randomCard1.img %>" />
-  <h3><%= randomCard1.name %></h3>
-  <p><%= randomCard1.number %></p>
-  <p><%= randomCard1.arcana %></p>
-  <p><%= randomCard1.suit %></p>
-  <p><%= randomCard1.fortune_telling %></p>
-  <br />
-
-  <img src="/images/cards/<%= randomCard2.img %>" />
-  <h3><%= randomCard2.name %></h3>
-  <p><%= randomCard2.number %></p>
-  <p><%= randomCard2.arcana %></p>
-  <p><%= randomCard2.suit %></p>
-  <p><%= randomCard2.fortune_telling %></p>
-  <br />
   
-  <img src="/images/cards/<%= randomCard3.img %>" />
-  <h3><%= randomCard3.name %></h3>
-  <p><%= randomCard3.number %></p>
-  <p><%= randomCard3.arcana %></p>
-  <p><%= randomCard3.suit %></p>
-  <p><%= randomCard3.fortune_telling %></p>
+  <div>
+    <element>
+  <img src="/images/cards/<%= randomCard1.img %>" style="width:30em; height:45em;" display: flex/>
+  <h3>Card: <%= randomCard1.name %></h3>
+  <p>Number: <%= randomCard1.number %></p>
+  <p>Arcana: <%= randomCard1.arcana %></p>
   <br />
+    </element>
+    <element>
+  <img src="/images/cards/<%= randomCard2.img %>" style="width:30em; height:45em;" />
+  <h3>Card: <%= randomCard2.name %></h3>
+  <p>Number: <%= randomCard2.number %></p>
+  <p>Arcana: <%= randomCard2.arcana %></p>
+  <br />
+    </element>
+    <element>
+  <img src="/images/cards/<%= randomCard3.img %>" style="width:30em; height:45em;" />
+  <h3>Card: <%= randomCard3.name %></h3>
+  <p>Number: <%= randomCard3.number %></p>
+  <p>Arcana: <%= randomCard3.arcana %></p>
+  <br />
+   </element>
+  </div>
+  
 
   <form action="/newReading/addComment" method="POST">
     <input type="text" name="profileId" value="<%= user.profile._id %>" hidden>
@@ -50,8 +47,8 @@
     <input type="text" name="number" value="<%= randomCard3.number %>" hidden>
     
     <label>
-      Comments:
-      <input required type="text" name="comment" result="result" autocomplete="off" />
+      Comments: 
+      <textarea rows="4" cols="50" type="text" name="comment" result="result" autocomplete="off" required/></textarea>
     </label>
     <br />
     <button type="submit">Save</button>

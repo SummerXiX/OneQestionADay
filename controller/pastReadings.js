@@ -11,7 +11,6 @@ export {
 function index(req, res) {
   Reading.find({})
     .then((readings) => {
-      // res.send(readings);
       res.render("pastReadings/index", {
         readings,
         title: "Past Readings",
@@ -61,7 +60,7 @@ function show(req, res) {
     })
     .catch((err) => {
       console.log(err);
-      res.redirect("/pastReadings");
+      res.redirect('/pastReadings');
     });
 }
 
@@ -73,7 +72,7 @@ function update(req, res) {
     })
     .catch((err) => {
       console.log(err);
-      res.redirect(`/pastReadings`);
+      res.redirect('/pastReadings');
     });
 }
 

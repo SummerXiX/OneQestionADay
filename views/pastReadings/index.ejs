@@ -1,11 +1,11 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
 <section>
-  <h1>All readings</h1>
+  <h1>Your Past Readings...</h1>
    <% if (readings.length) { %> 
     <ul>
       <% readings.forEach(reading => { %>
-      <li> 
+      <li> 🔮
         <a href="/pastReadings/<%=reading._id%>"> <%= reading.question %> </a>
       </li>
         <% }) %>

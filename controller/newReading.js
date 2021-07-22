@@ -44,7 +44,7 @@ function showResult(req, res) {
     question: req.body.question,
   });
 }
-// how to get question into the req.body
+
 const addComment = async (req, res) => {
   console.log(req.body)
   const obj = await req.body;
@@ -70,7 +70,7 @@ const addComment = async (req, res) => {
     number: obj.number[2]
   };
   
-  // Step 1: Add each card to the database
+  // Add each card to the database
   const cards = await Card.create([card1, card2, card3]);
   const newReading = {
       user: userId,
@@ -100,26 +100,4 @@ function show(req, res) {
     });
 }
 
-// shuffle the card array and randomly generate three cards
-// function shuffle(data) {
-//   var currentIndex = data.length,
-//     randomIndex;
 
-//   // While there remain elements to shuffle...
-//   while (0 !== currentIndex) {
-//     // Pick a remaining element...
-//     randomIndex = Math.floor(Math.random() * currentIndex);
-//     currentIndex--;
-
-//     // And swap it with the current element
-//     [data[currentIndex], data[randomIndex]] = [
-//       data[randomIndex],
-//       data[currentIndex],
-//     ];
-//   }
-
-//   let firstThreeData = data.slice(0, 3);
-//   let threeCards = firstThreeData.data.img;
-//   let threeNames = firstThreeData.data.name;
-//   console.log(threeCards, threeNames);
-// }

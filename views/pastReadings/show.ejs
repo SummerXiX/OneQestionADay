@@ -9,13 +9,14 @@
 </head>
 <body>
   <h1><%= title %></h1>
-  <img src="/images/cards/<%= reading.card1.img %>"/>
-  <img src="/images/cards/<%= reading.card2.img %>"/>
-  <img src="/images/cards/<%= reading.card3.img %>"/>
   <h2> Question: <%= reading.question %> </h2>
-  <h4> Comment: <%= reading.comment  %> </h4>
+  <div>
+  <img src="/images/cards/<%= reading.card1.img %>"/style="width:30em; height:45em;" >
+  <img src="/images/cards/<%= reading.card2.img %>"/style="width:30em; height:45em;" >
+  <img src="/images/cards/<%= reading.card3.img %>"/style="width:30em; height:45em;" >
+  </div>
+  <h3> Comment: <%= reading.comment  %> </h4>
   <a href="/pastReadings/<%= reading._id %>/edit">
-  
     <button>Edit Comment</button>
   </a>
   <form 
