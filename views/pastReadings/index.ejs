@@ -1,20 +1,18 @@
-<%- include('../partials/html-head') %> 
-<%- include('../partials/nav') %>
+<%- include('../partials/html-head') %> <%- include('../partials/nav') %>
 
 <section>
-  <h1>No readings yet!</h1>
-
-  <ul>
-    <% reading.forEach(data => { %>
-    <p><%= data._id %></p>
-    <p><%= data.question %></p>
-    <p><%= data.card1.img %></p>
-    <p><%= data.card2.img %></p>
-    <p><%= data.card3.img %></p>
-    <p><%= data.comment %></p>
-
-    <% }) %>
-  </ul>
-</section>
+  <h1>All readings</h1>
+   <% if (readings.length) { %> 
+    <ul>
+      <% readings.forEach(reading => { %>
+      <li> 
+        <a href="/pastReadings/<%=reading._id%>"> <%= reading.question %> </a>
+      </li>
+        <% }) %>
+    </ul>
+   
+    <% } else { %> 
+    <h2>You don't have a reading yet...</h2>
+    <% } %>
 
 <%- include('../partials/footer') %>

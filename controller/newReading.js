@@ -3,7 +3,7 @@ import { data } from "./cards.js";
 import { Reading, Card } from "../models/reading.js";
 import { User } from "../models/user.js";
 
-export { index, showResult, addComment, show };
+export { index, showResult, addComment };
 
 function index(req, res) {
   Reading.find({})
@@ -46,6 +46,7 @@ function showResult(req, res) {
 }
 // how to get question into the req.body
 const addComment = async (req, res) => {
+  console.log(req.body)
   const obj = await req.body;
   const userId = obj.profileId;
 
@@ -83,24 +84,6 @@ const addComment = async (req, res) => {
   const newestReading = await Reading.create(newReading);
   res.redirect("/pastReadings");
 }
-
-  // const card1 = {
-  //   img: req.body.card1img
-  // }
-
-  // req.body.user = req.user.profile;
-
-  // console.log(req.body);
-
-  // Reading.create(req.body)
-  //   .then((reading) => {
-  //     res.redirect("/pastReadings");
-  //   })
-  //   .catch((err) => {
-  //     console.log(err);
-  //     res.redirect("/pastReadings");
-  //   });
-
 
 function show(req, res) {
   Reading.findById(req.params.id)

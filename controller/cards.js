@@ -7,7 +7,6 @@ const data = JSON.parse(
 )
 // console.log(data.cards)
 
-
 export {
   data
 }

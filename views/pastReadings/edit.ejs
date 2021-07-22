@@ -1,0 +1,22 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Edit Your Comments </h1>
+  <h2><%=reading.question %></h2>
+  <form action="/pastReadings/<%= reading._id %>?_method=PUT" method="POST">
+    <label>
+      Comment:
+      <input 
+        type="text"
+        name="comment"
+        value="<%= reading.comment %>" 
+        autocomplete="off"
+      >
+    </label>
+    <button type="submit">Update</button>
+  </form>
+</section> 
+
+<%- include('../partials/footer') %>
+

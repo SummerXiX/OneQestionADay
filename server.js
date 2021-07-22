@@ -24,7 +24,7 @@ import { router as authRouter } from "./routes/auth.js";
 import { router as newReadingRouter } from "./routes/newReading.js";
 import { router as myProfileRouter } from "./routes/myProfile.js";
 import { router as pastReadingsRouter } from "./routes/pastReadings.js";
-import { router as deleteReadingRouter } from "./routes/deleteReading.js";
+import { router as deleteReadingRouter } from "./routes/pastReadings.js";
 
 // view engine setup
 app.set(

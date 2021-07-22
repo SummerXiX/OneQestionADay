@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title><%= title %></title>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <img src="/images/cards/<%= reading.card1.img %>"/>
+  <img src="/images/cards/<%= reading.card2.img %>"/>
+  <img src="/images/cards/<%= reading.card3.img %>"/>
+  <h2> Question: <%= reading.question %> </h2>
+  <h4> Comment: <%= reading.comment  %> </h4>
+  <a href="/pastReadings/<%= reading._id %>/edit">
+  
+    <button>Edit Comment</button>
+  </a>
+  <form 
+    action="/pastReadings/<%= reading._id %>?_method=DELETE" 
+    style="margin-top: 1rem;"
+    method="POST"
+  >
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>
