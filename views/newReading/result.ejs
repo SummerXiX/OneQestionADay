@@ -1,12 +1,14 @@
-<%- include('../partials/html-head') %> <%- include('../partials/nav') %>
+<%- include('../partials/html-head') %> 
+<link rel="stylesheet" href="/stylesheets/newReading/result.css ">
+<%- include('../partials/nav') %>
 
 <section>
-  <h1>Your question was...</h1>
-  <p></p>
-
+  <div class="Question">
+  
   <% if (user) { %>
-  <h2><%=question %></h2>
+  <h2>❔❔❔ <%= question %>❔❔❔</h2>
   <br />
+  </div>
   
   <div>
     <element>
@@ -18,14 +20,14 @@
     </element>
     <element>
   <img src="/images/cards/<%= randomCard2.img %>" style="width:30em; height:45em;" />
-  <h3>Card: <%= randomCard2.name %></h3>
+  <h4>Card: <%= randomCard2.name %></h4>
   <p>Number: <%= randomCard2.number %></p>
   <p>Arcana: <%= randomCard2.arcana %></p>
   <br />
     </element>
     <element>
   <img src="/images/cards/<%= randomCard3.img %>" style="width:30em; height:45em;" />
-  <h3>Card: <%= randomCard3.name %></h3>
+  <h5>Card: <%= randomCard3.name %></h5>
   <p>Number: <%= randomCard3.number %></p>
   <p>Arcana: <%= randomCard3.arcana %></p>
   <br />
@@ -47,11 +49,11 @@
     <input type="text" name="number" value="<%= randomCard3.number %>" hidden>
     
     <label>
-      Comments: 
-      <textarea rows="4" cols="50" type="text" name="comment" result="result" autocomplete="off" required/></textarea>
-    </label>
+      
+      <textarea placeholder="Enter your comments/thoughts" rows="4" cols="50" type="text" name="comment" result="result" autocomplete="off" required/></textarea>
     <br />
-    <button type="submit">Save</button>
+    <button id="saveButton" type="submit">Save</button>
+    </label>
   </form>
   <% } %>
 </section>

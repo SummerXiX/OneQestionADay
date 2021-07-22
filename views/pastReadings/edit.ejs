@@ -1,20 +1,24 @@
 <%- include('../partials/html-head') %>
+<link rel="stylesheet" href="/stylesheets/pastReadings/edit.css ">
 <%- include('../partials/nav') %>
 
 <section>
   <h1>Edit Your Comments </h1>
   <h2><%=reading.question %></h2>
   <form action="/pastReadings/<%= reading._id %>?_method=PUT" method="POST">
+    <div>
     <label>
-      Comment:
-      <input 
+      New Comment:
+      <textarea rows="4" cols="50"
+        placeholder="enter new comments"
         type="text"
         name="comment"
         value="<%= reading.comment %>" 
         autocomplete="off"
-      >
+      > </textarea>
     </label>
     <button type="submit">Update</button>
+    </div>
   </form>
 </section> 
 

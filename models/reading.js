@@ -10,12 +10,12 @@ const cardSchema = new mongoose.Schema({
     name: String,
     number: String,
     img: String,
-}, { timestamps: true })
+})
 
 
 const readingSchema = new mongoose.Schema(
   {
-    user: { type: mongoose.Schema.Types.ObjectId, ref: "Profile" },
+    user: { type: mongoose.Schema.Types.ObjectId, ref: "Profile", required: true },
     question: String,
     card1: {
       type: mongoose.Schema.Types.ObjectId,
@@ -31,7 +31,7 @@ const readingSchema = new mongoose.Schema(
     },
     comment: String,
   },
-  { timestamps: true }
+  { timestamps: true, }
 );
 
 const Reading = mongoose.model('Reading', readingSchema)

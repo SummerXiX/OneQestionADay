@@ -1,12 +1,13 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
+<link rel="stylesheet" href="/stylesheets/pastReadings/index.css ">
 
 <section>
-  <h1>Your Past Readings...</h1>
+  <h1> </h1>
    <% if (readings.length) { %> 
     <ul>
       <% readings.forEach(reading => { %>
       <li> 🔮
-        <a href="/pastReadings/<%=reading._id%>"> <%= reading.question %> </a>
+        <a href="/pastReadings/<%=reading._id%>"> <%= reading.question %> 🔮</a>
       </li>
         <% }) %>
     </ul>

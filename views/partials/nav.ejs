@@ -1,24 +1,29 @@
   <% if (!user) { %>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600'>
     <link rel="stylesheet" href="/stylesheets/siwg.css">
   <% } %>
-</head>
-<body>
-    <nav>
-      <i class="fas fa-meteor fa-2x"></i>
-      <a href="/newReading">Get a New Rading</a>
-      <a href="/pastReadings">My Past Readings</a>
-      <a href="/profile">My Profile</a>
-    </nav>
-
-    <% if (user) { %>
+  <% if (user) { %>
       <a href="/auth/logout">
-        <button type="submit">Logout</button>
+        <button id="logout" type="submit">Logout</button>
       </a>
-    <% } else { %>
+      <% } else { %>
       <a href="/auth/google" class="siwg-link">
         <button type="submit" class="siwg">
           <img id="siwg-image" alt="Sign in with Google" />
         </button>
       </a>
     <% } %>
+    
+</head>
+<body>
+    <nav>
+      <i class="fas fa-meteor fa-2x"></i>
+      <a href="/">Home</a>
+      <a href="/newReading">Get a New Rading</a>
+      <a href="/pastReadings">My Past Readings</a>
+
+    
+    </nav>
+
+    
  

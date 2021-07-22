@@ -4,27 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/pastReadings/show.css ">
+  
   <title><%= title %></title>
 </head>
 <body>
   <h1><%= title %></h1>
-  <h2> Question: <%= reading.question %> </h2>
+  <h2> ❔❔❔ <%= reading.question %> </h2>
   <div>
   <img src="/images/cards/<%= reading.card1.img %>"/style="width:30em; height:45em;" >
   <img src="/images/cards/<%= reading.card2.img %>"/style="width:30em; height:45em;" >
   <img src="/images/cards/<%= reading.card3.img %>"/style="width:30em; height:45em;" >
   </div>
-  <h3> Comment: <%= reading.comment  %> </h4>
-  <a href="/pastReadings/<%= reading._id %>/edit">
-    <button>Edit Comment</button>
-  </a>
-  <form 
-    action="/pastReadings/<%= reading._id %>?_method=DELETE" 
-    style="margin-top: 1rem;"
-    method="POST"
-  >
-    <button type="submit">Delete</button>
+  <h3> Previous Comments: <%= reading.comment  %> </h4>
+  <div id="buttons">
+    <a href="/pastReadings/<%= reading._id %>/edit">
+      <button id="editButton">Edit Comment</button>
+    </a>
+    <form 
+      action="/pastReadings/<%= reading._id %>?_method=DELETE" 
+      style="margin-top: 1rem;"
+      method="POST"
+    >
+      <button id="deleteButton"Button"type="submit">Delete</button>
+  </div>
   </form>
 </body>
 </html>

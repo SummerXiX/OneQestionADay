@@ -1,23 +1,30 @@
 <%- include('../partials/html-head') %> <%- include('../partials/nav') %>
-
+<link rel="stylesheet" href="/stylesheets/newReading/index.css ">
 <section>
-  <h1>Enter your question 🔮</h1>
-  <p>
-    Instructions: 
-    1. Find a quiet place and think about a yes or no question 
-    2. Enter your question 
-    3. Submit by clickling on the Shuffle button 
-    4. Save your reading
-  </p>
+  <div>
+    <h1>🔮 Enter your question 🔮</h1>
+    <div>
+    <p> Instructions: 
+      <ul>
+        <li>1. Think about a yes or no/open-ended question </li>
+        <li>2. Enter your question </li>
+        <li>3. Click on the Shuffle button</li>
+        <li>4. Enter your own interpretations/comments</li>
+        <li>4. Save your reading</li>
+    </ul>
+    </p>
+    
+  
   <% if (user) { %>
   <form action="/newReading/result" method="POST">
     <label>
-      Question:
-      <textarea rows="4" cols="50" type="text" name="question" autocomplete="off" required> 
+      <textarea placeholder="Enter your questions/concerns here" rows="4" cols="50" type="text" name="question" required> 
       </textarea>
-    <button type="submit">Shuffle</button>
+    </label>
+    <button id="shuffleButton" type="submit">Shuffle</button>
   </form>
   <% } %>
+  </div>
 </section>
 
 <%- include('../partials/footer') %>
