@@ -25,11 +25,13 @@
 
 -------------------------------------------------------
  # Screenshots:
-![Home Page](./ReadMe_screenshots/Index.png)
-![GetANewReading](./ReadMe_screenshots/EnterQuestion.png)
-![PastReadingIndex](./ReadMe_screenshots/GetResult.png)
-![PastReadingEdit](./ReadMe_screenshots/PastReadingsList.png)
-![EditDeletePastReading](./ReadMe_screenshots/EditDeletePastReading.png)
+![LandingPage](ReadMe_Screenshots/Index.png)
+![GetANewReading](ReadMe_screenshots/EnterQuestion.png)
+![PastReadingIndex](ReadMe_screenshots/GetResult.png)
+![PastReadingEdit](ReadMe_screenshots/PastReadingsList.png)
+![EditDeletePastReading](ReadMe_screenshots/EditDeletePastReading.png)
+
+
 -------------------------------------------------------
 # Directories Worth Mentioning:
 
