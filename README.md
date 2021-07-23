@@ -3,19 +3,20 @@
 # [Click to view the app](https://unit2summer.herokuapp.com/)
 -------------------------------------------------------
 # Motivation: 
-  I am a tarot reader/life reader/, and I have psychic abilities. Tarot cards is the first tool I learned to use, and I think it's a great starting point for people who are interested in reading or spirituality in general. 
+  I am a tarot reader/life reader, and I have psychic abilities. Tarot cards is the first tool I learned to use, and I think it's a great starting point for people who are interested in reading or spirituality in general. 
 
   There are so many tarot card decks on the market today. Generally, a spiritual teacher would design a deck of card with a theme, and he/she would hire an visual artist to render the cards. A deck can have 44, 52, or 90 cards, for example; that is totally up to the designer.
 
-  The Rider-Waite Tarot Deck is the most classical deck, since it encompasses all elements that a reading needs to take into consideration, and its usage is very versatile. For example, 
+  The Rider-Waite Tarot Deck is the most classical deck, since it encompasses all elements that a reading needs to take into consideration, and its usage is very versatile. For example, I can use a card to answer a yes or no question, and I can help my clients to find his/her cat. 
 
 
 -------------------------------------------------------
 # Decription: 
-- In this App, the user will think about a question, either a binary question or an open-ended question, or a general concern, and type it in in the text box. 
-- After the user clicks shuffles, he/she will get three cards along with the name of the card, the number of the card, and the type of Arcana. 
+- In this App, the user will think about a question, either a binary question or an open-ended question, or a general concern, and type it in the text box. 
+- After the user clicks on the "Shuffle" button, he/she will get three cards along with the name of the card, the number of the card, and the type of Arcana. 
 - Then, the user will think about what messages the three cards may be trying to convey, or how he/she feels after seeing the three cards, and write comments in the comments section, and click "Save".
-- In the "My Past Readings" section, the user can go in, click on his past readings, and edit or delete the reading. 
+- In the "My Past Readings" section, the user can go in, click on his/her past readings, and edit or delete the reading. 
+- Essentially, the user can use the app as a Reading Diary. 
 
 -------------------------------------------------------
 
