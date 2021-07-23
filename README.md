@@ -27,7 +27,7 @@
  # Screenshots:
 ![Index](ReadMe_Screenshots/Index.png)
 ![EnterQuestion](ReadMe_Screenshots/EnterQuestion.png)
-![GetResult](ReadMe_Screenshots/EnterQuestion.png)
+![GetResult](ReadMe_Screenshots/GetResult.png)
 ![PastReadingList](ReadMe_Screenshots/PastReadingsList.png)
 ![EditDeletePastReading](ReadMe_Screenshots/EditDeletePastReading.png)
 
