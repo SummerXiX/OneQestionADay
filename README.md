@@ -29,6 +29,7 @@
 ![EnterQuestion](ReadMe_Screenshots/EnterQuestion.png)
 ![GetResult](ReadMe_Screenshots/GetResult.png)
 ![PastReadingList](ReadMe_Screenshots/PastReadingsList.png)
+![APastReading](ReadMe_Screenshots/APastReadingsList.png)
 ![EditDeletePastReading](ReadMe_Screenshots/EditComment.png)
 
 
@@ -40,22 +41,22 @@
   - Five js files
   
 - Models:
-  - Four models: User, Profile, Card, Reading, 
-  - CardSchema has name, number, and img as properties
+  - Four models: User, Profile, Card, & Reading
+  - CardSchema has name, number, and img as properties.
   - ReadingSchema has user referencing the Profile model, card1, card2, card3, and comment as properties. 
 
 - Controllers:
-  - Four js files: cards.js, myProfile.js, newReading.js, pastReading.js
+  - Four js files: cards.js, myProfile.js, newReading.js, & pastReading.js
 
 - Views:
-  - Essentially has an ejs file  for each route's endpoint page.
+  - Essentially have an ejs file  for each route's endpoint page.
 
 - Database:
-  - a JSON file that contains data about the 78 cards.
+  - a JSON file that contains data about all 78 cards.
   - The JSON file is parsed in one of the controllers/controller function files.
   
 - Images:
-  - Images of the 78 cards are stored in public/images/cards
+  - Images of the 78 cards are stored in public/images/cards.
   
 
 -------------------------------------------------------
