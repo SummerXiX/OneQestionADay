@@ -11,7 +11,7 @@
 
 
 -------------------------------------------------------
-# Decription: 
+# Description: 
 - In this App, the user will think about a question, either a binary question or an open-ended question, or a general concern, and type it in the text box. 
 - After the user clicks on the "Shuffle" button, he/she will get three cards along with the name of the card, the number of the card, and the type of Arcana. 
 - Then, the user will think about what messages the three cards may be trying to convey, or how he/she feels after seeing the three cards, and write comments in the comments section, and click "Save".
