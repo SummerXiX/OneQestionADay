@@ -1,36 +1,36 @@
-# Memory Game
+# One Question A Day
 -------------------------------------------------------
 # [Click to view the app](https://unit2summer.herokuapp.com/)
 -------------------------------------------------------
 # Motivation: 
   I am a tarot reader/life reader/, and I have psychic abilities. Tarot cards is the first tool I learned to use, and I think it's a great starting point for people who are interested in reading or spirituality in general. 
 
-  There are so many tarot card decks on the market today. Generally, a spiritual teacher would design a deck of card with a theme, and he/she would hire an visual artist to render the cards. A deck can have 44, 52, or 90 cards - that is totally up to the designer.
+  There are so many tarot card decks on the market today. Generally, a spiritual teacher would design a deck of card with a theme, and he/she would hire an visual artist to render the cards. A deck can have 44, 52, or 90 cards, for example; that is totally up to the designer.
 
-  The Rider-Waite Tarot Deck is the classical deck, since it encompasses all elements that a reading needs to take into consideration, and its usage is very versatile. For example, 
+  The Rider-Waite Tarot Deck is the most classical deck, since it encompasses all elements that a reading needs to take into consideration, and its usage is very versatile. For example, 
 
 
 -------------------------------------------------------
 # Decription: 
-- It's a memory game where one player tries to find matching images. 
-- There are 2 x 10 = 20 cards in the game.
-- If the players clicks on the same images (finds the pair)consecutively , the images stay face-up. 
-- If he/she finds all the pairs within 2 minutes, it's a win. Otherwise, he/she loses. 
-- * Need to click on the Restart button to play the game
+- In this App, the user will think about a question, either a binary question or an open-ended question, or a general concern, and type it in in the text box. 
+- After the user clicks shuffles, he/she will get three cards along with the name of the card, the number of the card, and the type of Arcana. 
+- Then, the user will think about what messages the three cards may be trying to convey, or how he/she feels after seeing the three cards, and write comments in the comments section, and click "Save".
+- In the "My Past Readings" section, the user can go in, click on his past readings, and edit or delete the reading. 
 
 -------------------------------------------------------
 
 # Technologies Used: 
-- JS, HTML, CSS
+- JS, HTML, CSS, MongoDB, Express, Node
 
 -------------------------------------------------------
- # Dark-light Mode:
- ![light-mode](./screenshots/dark-mode.png)
- ![dark-mode](./screenshots/light-mode.png)
- ![win-message](./screenshots/win-message.png)
+ # Screenshots:
 
+![Home Page](./screenshots/dark-mode.png)
+![GetANewReading](./screenshots/light-mode.png)
+![PastReadingIndex](./screenshots/win-message.png)
+![PastReadingEdit](./screenshots/win-message.png)
 -------------------------------------------------------
-# Psudo-code
+# Directory Structure:
 
 - HTML:
   - Create 2 headers for the game's name and displayed messages
@@ -69,5 +69,6 @@
 
 -------------------------------------------------------
 # Future Improvements:
-  - make it prettier
-  - Add audio
+- A page with all 78 cards with descriptions and interpretations.
+- Have a function that will allow inverted cards to show, as meanings of inverted cards are different. 
+  
