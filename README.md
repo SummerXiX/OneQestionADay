@@ -29,7 +29,7 @@
 ![EnterQuestion](ReadMe_Screenshots/EnterQuestion.png)
 ![GetResult](ReadMe_Screenshots/GetResult.png)
 ![PastReadingList](ReadMe_Screenshots/PastReadingsList.png)
-![APastReading](ReadMe_Screenshots/APastReadingsList.png)
+![APastReading](ReadMe_Screenshots/APastReading.png)
 ![EditDeletePastReading](ReadMe_Screenshots/EditComment.png)
 
 
