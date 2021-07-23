@@ -25,11 +25,12 @@
 
 -------------------------------------------------------
  # Screenshots:
-![LandingPage](ReadMe_Screenshots/Index.png)
-![GetANewReading](ReadMe_screenshots/EnterQuestion.png)
-![PastReadingIndex](ReadMe_screenshots/GetResult.png)
-![PastReadingEdit](ReadMe_screenshots/PastReadingsList.png)
-![EditDeletePastReading](ReadMe_screenshots/EditDeletePastReading.png)
+![Index](ReadMe_Screenshots/Index.png)
+![EnterQuestion](ReadMe_Screenshots/EnterQuestion.png)
+![GetResult](ReadMe_Screenshots/EnterQuestion.png)
+![PastReadingList](ReadMe_Screenshots/PastReadingsList.png)
+![EditDeletePastReading](ReadMe_Screenshots/EditDeletePastReading.png)
+
 
 
 -------------------------------------------------------
