@@ -7,29 +7,28 @@
   
   <% if (user) { %>
   <h2>❔❔❔ <%= question %>❔❔❔</h2>
-  <br />
   </div>
   
   <div>
     <element>
   <img src="/images/cards/<%= randomCard1.img %>" style="width:30em; height:45em;" display: flex/>
   <h3>Card: <%= randomCard1.name %></h3>
-  <p>Number: <%= randomCard1.number %></p>
-  <p>Arcana: <%= randomCard1.arcana %></p>
+  <p class="lineTwo">Number: <%= randomCard1.number %></p>
+  <p class="lineThree">Arcana: <%= randomCard1.arcana %></p>
   <br />
     </element>
     <element>
   <img src="/images/cards/<%= randomCard2.img %>" style="width:30em; height:45em;" />
-  <h4>Card: <%= randomCard2.name %></h4>
-  <p>Number: <%= randomCard2.number %></p>
-  <p>Arcana: <%= randomCard2.arcana %></p>
+  <h3>Card: <%= randomCard2.name %></h3>
+  <p class="lineTwo">Number: <%= randomCard2.number %></p>
+  <p class="lineThree">Arcana: <%= randomCard2.arcana %></p>
   <br />
     </element>
     <element>
   <img src="/images/cards/<%= randomCard3.img %>" style="width:30em; height:45em;" />
-  <h5>Card: <%= randomCard3.name %></h5>
-  <p>Number: <%= randomCard3.number %></p>
-  <p>Arcana: <%= randomCard3.arcana %></p>
+  <h3>Card: <%= randomCard3.name %></h3>
+  <p class="lineTwo">Number: <%= randomCard3.number %></p>
+  <p class="lineThree">Arcana: <%= randomCard3.arcana %></p>
   <br />
    </element>
   </div>

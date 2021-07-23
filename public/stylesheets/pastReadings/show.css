@@ -37,6 +37,29 @@ nav a {
     text-decoration: none;
 }
 
+h1 {
+  font-size: 2.0rem;
+  color: rgb(39,8,29);
+  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 400;
+  color: rgb(39,8,29);
+  text-align: center;
+  font-size:medium;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: 400;
+  color: rgb(39,8,29);
+  text-align: center;
+  font-style: italic;
+}
+
+
 div{
     flex-direction: row;
     display: flex;

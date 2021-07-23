@@ -27,7 +27,7 @@ body {
 
 nav {
   background-color: rgb(190,149,189);
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -40,10 +40,8 @@ nav a {
 h2{
     font-style: italic;
     font-weight: 200;
-}
-
-.Question {
-    margin-left: auto;
+    text-align: center;
+    color:rgb(39,8,29);
 }
 
 div{
@@ -51,12 +49,33 @@ div{
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+    color:rgb(39,8,29);
 }
 
 h3, h4, h5, p {
     text-align: center;
     font-size: medium;
     color: rgb(59,112,95);
+}
+
+h3 {
+    margin-top: 16px;
+}
+
+h4 {
+    margin-top: 16px;
+}
+
+h5 {
+    margin-top: 16px;
+}
+
+.lineTwo{
+    margin-top: 5px;
+}
+
+.lineThree{
+    margin-top: 5px;
 }
 
 form {

@@ -3,22 +3,21 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>Edit Your Comments </h1>
-  <h2><%=reading.question %></h2>
+  <h1>Edit My Comments </h1>
+  <h2>Remembering the Question: <%=reading.question %></h2>
   <form action="/pastReadings/<%= reading._id %>?_method=PUT" method="POST">
-    <div>
     <label>
-      New Comment:
       <textarea rows="4" cols="50"
-        placeholder="enter new comments"
+        placeholder="Enter new comments"
+        
         type="text"
         name="comment"
         value="<%= reading.comment %>" 
         autocomplete="off"
-      > </textarea>
+      ></textarea>
     </label>
-    <button type="submit">Update</button>
-    </div>
+    <button id="updateButton" type="submit">Update</button>
+   
   </form>
 </section> 
 

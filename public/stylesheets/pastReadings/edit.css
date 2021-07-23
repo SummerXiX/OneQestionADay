@@ -37,6 +37,36 @@ nav a {
     text-decoration: none;
 }
 
+h1 {
+  font-size: 2.0rem;
+  color: rgb(39,8,29);
+  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 400;
+  color: rgb(39,8,29);
+  text-align: center;
+  font-size:medium;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+h1, textarea, #updateButton {
+  margin-top: 30px;
+  text-align: center;
+}
+
+label {
+  margin-left: 400px;
+}
+
+#updateButton {
+  margin-left: 600px;
+}
+
+
 button{
     color: #0099CC; 
     background: transparent; 
@@ -61,10 +91,10 @@ textarea{
     font-style: italic;
 }
 
-div {
-    flex-direction: column;
-    
+textarea, #updateButton {
+  margin-top: 40px;
 }
+
 
 
 

@@ -31,12 +31,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  text-decoration: none;
 }
 
-nav a{
-  text-decoration: none;
-
+nav a {
+    text-decoration: none;
 }
 
 main {
@@ -44,19 +42,29 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-left: 15%;
+  margin-right: 15%;
+  
 }
 
 h1 {
   font-size: 3.2rem;
+  color:rgb(39,8,29);
 }
 
 h2, h3 {
   font-size: 2.0rem;
   margin-top: 40px;
+  color:rgb(39,8,29);
+  font-weight: 400;
 }
  
 p {
-  font-size: 1.8rem
+  font-size: 1.8rem;
+  color:rgb(39,8,29);
+  font-weight: 280;
+  text-align: justify;
+
  }
 
 div {
