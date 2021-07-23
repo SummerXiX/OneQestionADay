@@ -36,7 +36,7 @@ let server
 if (process.env.NODE_ENV !== 'production') {
   const homedir = os.homedir()
 
-  const options = {
+  const options= {
     key: fs.readFileSync(`${homedir}/certs/localhost/localhost.key`),
     cert: fs.readFileSync(`${homedir}/certs/localhost/localhost.crt`)
   }

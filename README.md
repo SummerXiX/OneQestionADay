@@ -24,51 +24,40 @@
 
 -------------------------------------------------------
  # Screenshots:
-
-![Home Page](./screenshots/dark-mode.png)
-![GetANewReading](./screenshots/light-mode.png)
-![PastReadingIndex](./screenshots/win-message.png)
-![PastReadingEdit](./screenshots/win-message.png)
+![Home Page](./ReadMe_screenshots/Index.png)
+![GetANewReading](./ReadMe_screenshots/EnterQuestion.png)
+![PastReadingIndex](./ReadMe_screenshots/GetResult.png)
+![PastReadingEdit](./ReadMe_screenshots/PastReadingsList.png)
+![EditDeletePastReading](./ReadMe_screenshots/EditDeletePastReading.png)
 -------------------------------------------------------
-# Directory Structure:
+# Directories Worth Mentioning:
 
-- HTML:
-  - Create 2 headers for the game's name and displayed messages
-  - Create a container to display a timer and a dark/light mode button
-  - Create a gameboard with 20 images and assign back-side/front-side to them
-  - Create a restart button
+- Routes: 
+  - Five js files
+  
+- Models:
+  - Four models: User, Profile, Card, Reading, 
+  - CardSchema has name, number, and img as properties
+  - ReadingSchema has user referencing the Profile model, card1, card2, card3, and comment as properties. 
 
-- JS:
-  - Define variables/state
-    - firstCard = the first card that a player clicks on
-    - secondCard = the second card that a player clicks on
-    - delay = a time lapse when a card flips back 
-    - win = if the player wins the game
-    - countMatch = counts how many matches the plays have already
-  - Define Cached Element References
-    - restartBtn = the restart button
-    - lightDarkBtn = the light/dark mode switch
-    - message = a message that displays if the player wins or loses
-    - cards = the images/cards on the game board
-  - Define Event Listeners
-    - click to flip the card
-    - click to restart the game
-    - click to switch between light/dark mode
-  - Define Functions
-    - Create a function to flip the card
-      - determine if it's the first or second card
-      - counts the number of matches if there is a match
-      - the cards flip back to their original state if it's not a match
-      - restart all the functions when a restart button is clicked
-      - determine the win condition
-    - Create a function for the light/dark mode
+- Controllers:
+  - Four js files: cards.js, myProfile.js, newReading.js, pastReading.js
 
-- CSS
-  - Should clip over the cards
-  - Format the buttons and headers
+- Views:
+  - Essentially has an ejs file  for each route's endpoint page.
+
+- Database:
+  - a JSON file that contains data about the 78 cards.
+  - The JSON file is parsed in one of the controllers/controller function files.
+  
+- Images:
+  - Images of the 78 cards are stored in public/images/cards
+  
 
 -------------------------------------------------------
 # Future Improvements:
 - A page with all 78 cards with descriptions and interpretations.
 - Have a function that will allow inverted cards to show, as meanings of inverted cards are different. 
+- Clean up directories and codes to make them more organized and coherent. 
+- Name files/variables more efficiently. 
   
